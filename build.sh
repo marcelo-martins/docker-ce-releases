@@ -9,7 +9,7 @@
 #github_version="18.09.7"
 #github_version="19.03.1"
 set -e
-github_version="19.03.3"
+github_version="18.09.7"
 ftp_version=$(cat ftp_version.txt)
 del_version=$(cat delete_version.txt)
 status=$(curl -s --head -w %{http_code} https://oplab9.parqtec.unicamp.br/pub/ppc64el/docker/version-$github_version/$sys -o /dev/null)
