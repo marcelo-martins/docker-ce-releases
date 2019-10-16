@@ -57,6 +57,6 @@ then
     #then
         
     #fi
-    echo "VALIDACAO 12"
-    lftp -c "open -u $USER,$PASS ftp://oplab9.parqtec.unicamp.br; mirror -R ./ /ppc64el/docker/version-$github_version/$sys"
+    echo "FALTA ACESSO"
+    #lftp -c "open -u $USER,$PASS ftp://oplab9.parqtec.unicamp.br; mirror -R ./ /ppc64el/docker/version-$github_version/$sys"
 fi
