@@ -46,7 +46,8 @@ then
     cd $dir
     
     echo "VALIDACAO 9"
-    VERSION=$github_version make $sys
+    # VERSION=$github_version make $sys
+    make $sys
     
     echo "VALIDACAO 10"
     cd ../../../
