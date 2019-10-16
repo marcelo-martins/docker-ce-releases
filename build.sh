@@ -43,6 +43,7 @@ then
     cd docker-ce && git apply --3way ../patches/*
     
     echo "VALIDACAO 8"
+    echo $dir
     cd $dir
     
     echo "VALIDACAO 9"
@@ -52,6 +53,7 @@ then
     cd ../../../
     
     echo "VALIDACAO 11"
+    echo $sys
     cd $bin_dir
     
     #if [[ $github_version > $ftp_version ]]
