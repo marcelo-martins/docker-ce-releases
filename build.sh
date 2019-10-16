@@ -8,6 +8,7 @@
 #github_version="18.09.6"
 #github_version="18.09.7"
 #github_version="19.03.1"
+set -e
 github_version="19.03.3"
 ftp_version=$(cat ftp_version.txt)
 del_version=$(cat delete_version.txt)
