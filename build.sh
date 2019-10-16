@@ -26,7 +26,7 @@ then
     if [[ $status == 404 ]]
     then
         echo "VALIDACAO 3.5"
-        lftp -c "open -u $USER,$PASS ftp://oplab9.parqtec.unicamp.br; mkdir /ppc64el/docker/version-$github_version"
+        #lftp -c "open -u $USER,$PASS ftp://oplab9.parqtec.unicamp.br; mkdir /ppc64el/docker/version-$github_version"
         #lftp -c "open -u $USER,$PASS ftp://oplab9.parqtec.unicamp.br; rm /ppc64el/docker/$ftp_version"
     fi
     
@@ -43,7 +43,6 @@ then
     cd docker-ce && git apply --3way ../patches/*
     
     echo "VALIDACAO 8"
-    echo $dir
     cd $dir
     
     echo "VALIDACAO 9"
@@ -53,7 +52,6 @@ then
     cd ../../../
     
     echo "VALIDACAO 11"
-    echo $sys
     cd $bin_dir
     
     #if [[ $github_version > $ftp_version ]]
